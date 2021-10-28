@@ -1,0 +1,51 @@
+body{
+    background: #fafafa;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dino{
+    width: 60px;
+    height: 60px;
+    background-image: url(img/dino.png);
+    position: absolute;
+    bottom: 0;
+}
+.cactus{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url(img/cactus.png);
+}
+
+.game-over{  
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;    
+    text-align: center;        
+    background-repeat: no-repeat;
+    color: #b6b6b6;
+}
+
+
+.again::hover{
+    border-radius: 50%;
+}
+
+@keyframes slideright {
+    from{
+        background-position: 70000%;
+    }
+    to{
+        background-position: 0;
+    }
+}
+
+.background{
+    position: absolute;
+    bottom: 0;
+    background-image: url(img/background.png);
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
